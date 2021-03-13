@@ -17,11 +17,11 @@ phases:
       - npm install
   build:
     commands:
-      # - echo testing...
-      # - echo building...
+      - echo testing...
+      - echo building...
       - ng build --prod
 artifacts:
   files:
     - "**/*"
-  discard-paths: yes
-  base-directory: /root/ajdreamaproject
+  discard-paths: no
+  base-directory: dist
